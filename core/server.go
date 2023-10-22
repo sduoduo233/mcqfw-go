@@ -35,12 +35,12 @@ var dialer net.Dialer
 func StartServer(c Config) error {
 	config = c
 
-	go func() {
-		err := runNFQueue()
-		if err != nil {
-			log.Fatalf("nfqueue error: %s", err)
-		}
-	}()
+	// go func() {
+	// 	err := runNFQueue()
+	// 	if err != nil {
+	// 		log.Fatalf("nfqueue error: %s", err)
+	// 	}
+	// }()
 
 	listener, err := net.Listen("tcp", config.Listen)
 	if err != nil {
