@@ -22,3 +22,7 @@ One way to bypass this type of detection is setting the TCP window size to a ver
 3. `./mcqfw -listen 127.0.0.1:8081`
 4. Configure your application to use MCQFW's SOCKS5 proxy, for example:
 `curl --proxy socks5://127.0.0.1:8081 blacklisted_website.com`
+
+# Credits
+
+[https://github.com/bol-van/zapret/blob/master/docs/readme.eng.md](https://github.com/bol-van/zapret/blob/master/docs/readme.eng.md)
